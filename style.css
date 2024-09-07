@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+header {
+  display: flex;
+  max-width: 1200px;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+.left-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-part>ul {
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+  color: #4B5D68;
+}
+
+.left-part li:hover {
+  color: #9C69E2;
+}
+
+header>button {
+  font-family: 'Montserrat', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: solid 1px;
+  border-color: #9C69E2;
+  color: #212353;
+  border-radius: 50%;
+}
+
+header>button::after {
+  content: url(images/arrow.svg);
+  background-color: #9C69E2;
+}
