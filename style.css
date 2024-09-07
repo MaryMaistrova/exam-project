@@ -55,13 +55,23 @@ header>button::after {
   padding-left: 20px;
 }
 
-article {
-  margin: auto;
+main {
   max-width: 1200px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin: auto;
+}
+
+article {
+  max-width: 100%;
   min-height: 500px;
 }
+
 h1 {
   font-size: 80px;
+  color: #212353;
 }
 
 .text-part {
@@ -78,7 +88,7 @@ h1 {
 .text-part>button {
   font-family: 'Montserrat', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: none;
-  background-color: #9C69E2;
+  background-color: #8A40EE;
   border-radius: 20px;
   height: 60px;
   width: 210px;
@@ -92,8 +102,40 @@ h1 {
   color: #fff;
 }
 
-article>img {
+.text-part>button:not(:hover) {
+  background-color: #9C69E2;
+  opacity: 60%;
+}
+
+.first>img {
   position: relative;
   left: 400px;
   top: 200px;
 }
+
+.second {
+  display: flex;
+  background-color: #FDE8F5;
+  border-radius: 30px;
+  padding: 70px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.text-2 {
+  max-width: 500px;
+  min-height: 340px;
+}
+
+h2 {
+  font-size: 40px;
+  color: #212353;
+  padding-top: 70px;
+}
+
+.text-2>p {
+  font-size: 18px;
+  color: #4B5D68;
+  text-align: left;
+}
+
