@@ -60,7 +60,7 @@ main {
   min-height: 100px;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  padding-bottom: 100px;
   margin: auto;
 }
 
@@ -72,20 +72,21 @@ article {
 h1 {
   font-size: 80px;
   color: #212353;
+  font-family: 'Work Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.text-part {
+.first-text-part {
   max-width: 600px;
   text-align: left;
   position: absolute;
   z-index: 1;
 }
 
-.text-part>p {
+.first-text-part>p {
   max-width: 400px;
 }
 
-.text-part>button {
+.first-text-part>button {
   font-family: 'Montserrat', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: none;
   background-color: #8A40EE;
@@ -98,11 +99,11 @@ h1 {
   text-align: center;
 }
 
-.text-part>button>a {
+.first-text-part>button>a {
   color: #fff;
 }
 
-.text-part>button:not(:hover) {
+.first-text-part>button:not(:hover) {
   background-color: #9C69E2;
   opacity: 60%;
 }
@@ -117,9 +118,10 @@ h1 {
   display: flex;
   background-color: #FDE8F5;
   border-radius: 30px;
-  padding: 70px;
+  padding: 40px;
   justify-content: space-between;
   text-align: center;
+  margin: 100px 50px 50px 50px;
 }
 
 .text-2 {
@@ -131,11 +133,71 @@ h2 {
   font-size: 40px;
   color: #212353;
   padding-top: 70px;
+  font-family: 'Work Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.text-2>p {
-  font-size: 18px;
-  color: #4B5D68;
-  text-align: left;
+.some-text {
+  max-width: 638px;
+  margin-inline: auto;
+  text-align: center;
+  padding-bottom: 30px;
 }
+
+.cards {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.cards>ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cards li {
+  width: 540px;
+  height: 400px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.text-part {
+  width: 220px;
+  padding: 62px 70px 62px 100px;
+  border-radius: 25%;
+  position: relative;
+  z-index: -1;
+}
+
+li:nth-of-type(1) .text-part{
+  background-color: #F0FAF9;
+}
+
+li:nth-of-type(2) .text-part{
+  background-color: #F6F0FD;
+}
+
+li:nth-of-type(3) .text-part{
+  background-color: #FEF0F8;
+}
+
+li:nth-of-type(4) .text-part{
+  background-color: #EAF6FC;
+}
+
+h3 {
+  font-size: 24px;
+  color: #212353;
+  font-family: 'Work Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cards>ul>li>img {
+  position: absolute;
+  right: 400px;
+  top: 100px;
+  z-index: 1;
+}
+
+
 
